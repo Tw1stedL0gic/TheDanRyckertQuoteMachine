@@ -22,7 +22,7 @@ def scrape_quotes_on_page(i):
     quote_lock.release()
     
 
-print 'Welcome to The Dan Ryckert Quote Machine'
+
 
 quotes = []
 
@@ -39,4 +39,9 @@ for i in range(pages_to_scrape):
     threads[i].join()
     
 random.seed()
-print random.choice(quotes)
+
+
+print '.=======================================================================================.'
+print '    Welcome to The Dan Ryckert Quote Machine                                             '
+print '      ' + random.choice(quotes)
+print '\'=======================================================================================\''
